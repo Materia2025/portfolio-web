@@ -1,0 +1,307 @@
+/*  Variables de Color (Warm Indigo & Peach)
+    */
+:root {
+  --bg-dark: #534bce;        
+  --bg-hero: linear-gradient(135deg, #9690eb 0%, #0F172A 100%);
+  --bg-light: #FAFAFA;       
+  --bg-card: #FFFFFF;
+  --bg-acerca-izq: #F3F4F6;
+  --bg-acerca-der: #EEF2FF;
+  
+  --accent-primary: #FF7E5F; 
+  --accent-primary-hover: #E86A4C;
+  --accent-secondary: #6366F1;
+  --text-dark: #111827;    
+  --text-muted: #4B5563;
+  --text-light: #f8f8f8;
+  
+  --chip-bg-dark: rgba(255, 255, 255, 0.12);
+  --chip-bg-light: #E0E7FF;
+  --chip-text-light: #3730A3;
+}
+
+/* ======= Estilos Generales =================== */
+body {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  color: var(--text-dark);
+  background-color: var(--bg-light);
+}
+
+.btn {
+  border-radius: 5px !important;
+  font-weight: 500;
+  transition: all 0.25s ease;
+}
+
+/* ============== Navegación ==================== */
+
+/* Barra  */
+.navbar,
+.navbar-dark,
+.bg-dark {
+  background-color: rgba(255, 255, 255, 0.95) !important; 
+  backdrop-filter: blur(8px); 
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08) !important;
+}
+
+/* Marca / Nombre */
+
+.marca-icono {
+  width: 38px;
+  height: 38px;
+  background-color: #FF7E5F; 
+  color: #ffffff;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  box-shadow: 0 2px 6px rgba(255, 126, 95, 0.3);
+}
+
+.navbar-dark .navbar-brand {
+  color: #111827 !important; 
+  font-weight: 700;
+}
+
+/* Enlaces*/
+.navbar-dark .nav-link {
+  color: #4B5563 !important; 
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.navbar-dark .nav-link:hover,
+.navbar-dark .nav-link.active {
+  color: #FF7E5F !important; 
+}
+
+/* Boton hamburguesa  */
+.navbar-dark .navbar-toggler-icon {
+  filter: invert(1); 
+}
+
+
+/* ===================  Hero ====================== */
+.bg-hero {
+  background: var(--bg-hero) !important;
+}
+
+.hero-badge {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+  color: var(--accent-primary) !important;
+  border: 1px solid rgba(255, 126, 95, 0.3);
+}
+
+/* Chips de tecnologias */
+.chip {
+  display: inline-block;
+  background-color: #FFFFFF !important;
+  color: #1E1B4B !important;
+  font-weight: 700 !important;
+  padding: 0.4rem 1rem;
+  border-radius: 50rem;
+  font-size: 0.85rem;
+  margin: 0.25rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.btn-hero-principal {
+  background-color: #FF7E5F !important;
+  border-color: #FF7E5F !important;
+  color: #FFFFFF !important;
+  font-weight: 600;
+  box-shadow: 0 4px 14px rgba(255, 126, 95, 0.4);
+  transition: all 0.2s ease;
+}
+
+.btn-hero-principal:hover {
+  background-color: #E86A4C !important;
+  border-color: #E86A4C !important;
+  transform: translateY(-2px);
+}
+
+/* 2. Botón Contacto */
+.btn-hero-secundario {
+  background-color: #FFFFFF !important;
+  border: none !important;
+  color: #1E1B4B !important;
+  font-weight: 700 !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.btn-hero-secundario:hover {
+  background-color: #F3F4F6 !important;
+  color: #1E1B4B !important;
+}
+
+/* ================ acerca de mi ========================= */
+.bg-acerca-izq {
+  background-color: var(--bg-acerca-izq) !important;
+}
+
+.bg-acerca-der {
+  background-color: var(--bg-acerca-der) !important;
+}
+
+.foto-perfil {
+  width: 100%;
+  max-width: 420px;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #FFFFFF;
+}
+
+/* =====================Chips / Etiquetas de tecnologias============= */
+.chip {
+  display: inline-block;
+  background-color: var(--bg-dark);
+  color: var(--text-light);
+  padding: 0.35rem 0.85rem;
+  border-radius: 50rem;
+  font-size: 0.85rem;
+  font-weight: 500;
+  margin: 0.2rem;
+  backdrop-filter: blur(4px);
+}
+
+.chip-dark {
+  background-color: #6366F1 !important;
+color: #FFFFFF !important;
+}
+
+/* Botones personalizados---------------------------*/
+
+.btn-dark, 
+.btn-primary {
+  background-color: var(--accent-primary) !important;
+  border-color: var(--accent-primary) !important;
+  color: #FFFFFF !important;
+}
+
+.btn-dark:hover, 
+.btn-primary:hover {
+  background-color: var(--accent-primary-hover) !important;
+  border-color: var(--accent-primary-hover) !important;
+  transform: translateY(-1px);
+}
+
+/* Boton secundario contorno */
+.btn-outline-light {
+  border-color: rgba(255, 255, 255, 0.4) !important;
+  color: var(--text-light) !important;
+}
+
+.btn-outline-light:hover {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+  border-color: var(--text-light) !important;
+}
+
+/* ============== tarjetas de proyectos ============= */
+.card {
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08) !important;
+}
+
+/* =================  Contacto ================================== */
+#contacto a {
+  transition: color 0.2s ease;
+}
+
+#contacto a:hover {
+  color: var(--accent-secondary) !important;
+}
+
+/* ===================  Footer ==================== */
+.pie-pagina {
+  background-color: var(--bg-dark) !important;
+  color: var(--text-light) !important;
+  padding: 2.5rem 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.pie-pagina .redes a {
+  color: var(--text-light);
+  font-size: 1.5rem;
+  margin: 0 0.75rem;
+  transition: color 0.2s ease, transform 0.2s ease;
+  display: inline-block;
+}
+
+.pie-pagina .redes a:hover {
+  color: var(--accent-primary);
+  transform: translateY(-2px);
+}
+
+#inicio p {
+    color: #ffffff !important;
+    opacity: 1 !important;
+}
+
+
+.hero-seccion {
+  min-height: calc(100vh - 56px);
+  margin-top: 56px;
+}
+
+
+.hero-texto {
+  max-width: 650px;
+}
+
+.contenedor-contacto {
+  max-width: 960px;
+}
+
+  html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 72px;
+}
+
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+  object-position: center top;  
+}
+
+/* ====== Proyectos ====== */
+.seccion-proyectos {
+  background-color: var(--bg-acerca-der);
+}
+
+.tarjeta-proyecto {
+  background-color: #FFFFFF;
+  border: 1px solid #DDE3F7;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* Imagen de altura fija */
+.tarjeta-proyecto .card-img-top {
+  height: 200px;
+  object-fit: cover;
+  object-position: center top;
+}
+
+
+.tarjeta-proyecto .card-text {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* Chips  */
+.tarjeta-proyecto .chip-dark {
+  background-color: var(--chip-bg-light) !important;
+  color: var(--chip-text-light) !important;
+  box-shadow: none;
+}

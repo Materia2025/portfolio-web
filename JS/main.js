@@ -1,3 +1,4 @@
+
 // Mensaje de exito al enviar el formulario de contacto
 
 document.getElementById('formulario-contacto').addEventListener('submit', function(e) {
@@ -12,3 +13,4 @@ document.getElementById('formulario-contacto').addEventListener('submit', functi
         aviso.classList.add('d-none');
     }, 5000);
 });
+

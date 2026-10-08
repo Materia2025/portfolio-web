@@ -22,7 +22,7 @@
 <body data-bs-spy="scroll" data-bs-target="#barra-nav" data-bs-root-margin="-96px 0px -60% 0px" tabindex="0">
 
     <!-- Barra -->
-    <nav id="barra-nav" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <nav id="barra-nav" class="navbar navbar-expand-lg navbar-principal fixed-top">
         <div class="container">
             <a class="navbar-brand d-flex align-items-center fw-bold" href="#inicio">
                 <span class="marca-icono me-2">MC</span>
@@ -97,18 +97,18 @@
     <section id="proyectos" class="py-5 bg-white">
         <div class="container">
             <div class="text-center mb-5">
-                <span class="text-uppercase tracking-wider text-muted fw-bold small">Portafolio</span>
+                <span class="text-uppercase text-muted fw-bold small">Portafolio</span>
                 <h2 class="fw-bold text-dark mt-1">Mis Proyectos</h2>
             </div>
             
-            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+            <div class="row g-4">
                 
                 <!-- Proyecto 1 -->
-                <div class="col">
+                <div class="col-12 col-md-6 col-lg-4">
                     <div class="card h-100 shadow-sm border-0 bg-light">
                         <img src="img/sistema-autos.jpg" class="card-img-top" alt="Gestion Integral Automotriz">
                         <div class="card-body d-flex flex-column">
-                            <h5 class="card-title fw-bold text-dark mb-2">Gestion Integral Automotriz</h5>
+                            <h5 class="card-title fw-bold text-dark mb-2">Gestión Integral Automotriz</h5>
                            <p class="card-text text-secondary mb-3">
                                 Sistema para una concesionaria con 3 sucursales. Desarrollé el backend de Ventas e Inventario.
                             </p>
@@ -116,13 +116,13 @@
                                 <span class="chip chip-dark">Django REST Framework</span>
                                 <span class="chip chip-dark">MySQL</span>
                             </div>
-                            <a href="https://github.com/Njord-sklodowska/agencia-vdv.git" target="_blank" rel="noopener" class="btn btn-dark mt-auto">Ver en GitHub →</a>
+                            <a href="https://github.com/Njord-sklodowska/agencia-vdv.git" target="_blank" rel="noopener" class="btn btn-hero-principal mt-auto">Ver en GitHub →</a>
                         </div>
                     </div>
                 </div>
 
                 <!-- Proyecto 2 -->
-                <div class="col">
+                <div class="col-12 col-md-6 col-lg-4">
                     <div class="card h-100 shadow-sm border-0 bg-light">
                         <img src="img/festival.jpg" class="card-img-top" alt="Sitio Web Festival Sonidos de la Ciudad">
                         <div class="card-body d-flex flex-column">
@@ -135,13 +135,13 @@
                                 <span class="chip chip-dark">CSS</span>
                                 <span class="chip chip-dark">JavaScript</span>
                             </div>
-                           <a href="https://github.com/Pardinho10/sonidos-de-la-ciudad.git" target="_blank" rel="noopener" class="btn btn-dark mt-auto">Ver en GitHub →</a>
+                           <a href="https://github.com/Pardinho10/sonidos-de-la-ciudad.git" target="_blank" rel="noopener" class="btn btn-hero-principal mt-auto">Ver en GitHub →</a>
                         </div>
                     </div>
                 </div>
 
                 <!-- Proyecto 3 -->
-                <div class="col">
+                <div class="col-12 col-md-6 col-lg-4">
                     <div class="card h-100 shadow-sm border-0 bg-light">
                         <img src="img/portfolio-web.png" class="card-img-top" alt="Este portafolio">
                         <div class="card-body d-flex flex-column">
@@ -155,7 +155,7 @@
                     
                                 <span class="chip chip-dark">JavaScript</span>
                             </div>
-                            <a href="https://github.com/Materia2025/portfolio-web" target="_blank" rel="noopener" class="btn btn-dark mt-auto">Ver en GitHub →</a>
+                            <a href="https://github.com/Materia2025/portfolio-web" target="_blank" rel="noopener" class="btn btn-hero-principal mt-auto">Ver en GitHub →</a>
                         </div>
                     </div>
                 </div>
@@ -172,24 +172,35 @@
             
             <!-- Columna Izquierda -->
             <div class="col-md-5">
-                <span class="text-uppercase tracking-wider text-muted fw-bold small d-block mb-1">Contacto</span>
+                <span class="text-uppercase text-muted fw-bold small d-block mb-1">Contacto</span>
                 <h2 class="fw-bold mb-3 text-dark display-6">Hablemos</h2>
                 <p class="text-secondary mb-4 fs-6">
                     Escribime si querés comentarme algo sobre un proyecto o hacerme una consulta.
                 </p>
                 
                 <ul class="list-unstyled text-secondary fs-6">
+                    <!-- Correo -->
                     <li class="mb-3 d-flex align-items-center">
                         <i class="bi bi-envelope me-3 text-dark fs-5"></i> 
-                        <a href="mailto:tu@correo.com" class="text-decoration-none text-secondary">materias2025c@gmail.com</a>
+                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=materias2025c@gmail.com" target="_blank" rel="noopener" class="text-decoration-none text-secondary">
+                            materias2025c@gmail.com
+                        </a>
                     </li>
+
+                    <!-- github  -->
                     <li class="mb-3 d-flex align-items-center">
                         <i class="bi bi-github me-3 text-dark fs-5"></i> 
-                        <a href="https://github.com/Materia2025"" target="_blank" rel="noopener" class="text-decoration-none text-secondary">github.com/Materia2025</a>
+                        <a href="https://github.com/Materia2025" target="_blank" rel="noopener" class="text-decoration-none text-secondary">
+                            github.com/Materia2025
+                        </a>
                     </li>
+
+                    <!-- Linkedin -->
                     <li class="mb-3 d-flex align-items-center">
                         <i class="bi bi-linkedin me-3 text-dark fs-5"></i> 
-                        <a href="https://www.linkedin.com/in/tu-usuario" target="_blank" rel="noopener" class="text-decoration-none text-secondary">linkedin.com/in/ejemplo</a>
+                        <a href="https://www.linkedin.com" target="_blank" rel="noopener" class="text-decoration-none text-secondary">
+                            linkedin.com
+                        </a>
                     </li>
                 </ul>
             </div>
@@ -212,7 +223,7 @@
                     <button type="submit" class="btn btn-hero-principal w-100 py-2">Enviar</button>
 
                     <div id="aviso-envio" class="alert alert-success mt-3 mb-0 d-none" role="alert">
-                        ¡Gracias! Tu mensaje fue enviado.
+                        Mensaje registrado (demo).
                     </div>
                 </form>
             </div>
@@ -228,10 +239,10 @@
                 <a href="https://github.com/Materia2025" target="_blank" rel="noopener" aria-label="GitHub">
                     <i class="bi bi-github"></i>
                 </a>
-                <a href="https://www.linkedin.com/in/tu-usuario" target="_blank" rel="noopener" aria-label="LinkedIn">
+                <a href="https://www.linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn">
                     <i class="bi bi-linkedin"></i>
                 </a>
-                <a href="mailto:matec@gmail.com" aria-label="Correo">
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=materias2025c@gmail.com" target="_blank" rel="noopener" aria-label="Correo">
                     <i class="bi bi-envelope"></i>
                 </a>
             </div>
